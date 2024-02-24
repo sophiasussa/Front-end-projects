@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Reserva de Hospedagem</title>
+</head>
+<body>
+  <div class="titulo">
+    <h1>Reserve sua Hospedagem</h1>
+  </div>
+
+<!-- Início do formulário -->
+  <form>
+    <div class="formu">
+
+      <h3>Dados Pessoais</h3>
+      <div class="grupo">
+          <label for="nome">Nome <span class="required-field" title="Obrigatório" >*</span></label>
+          <input type="text" id="entrada" name="nome"  placeholder=" Digite o seu primeiro nome" required>
+      </div>
+      <div class="grupo">
+        <label for="sobrenome">Sobrenome <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="text" id="entrada" name="sobrenome"  placeholder=" Informe o seu sobrenome" required>
+      </div>
+      <div class="grupo">
+        <label for="email">Email <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="email" id="entrada" name="email"  placeholder=" Defina um email para mandarmos informações da reserva" required>
+      </div>  
+      <div class="grupo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="entrada" name="telefone" placeholder=" Informe o seu número de celular">
+      </div>
+
+      <h3>Reserva</h3>
+      <div class="grupo1">
+        <label for="checkin">Check-in <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="date" id="data" name="checkin" required>    
+      </div>
+      <div class="grupo3">
+        <label for="checkout">Check-out <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="date" id="data" name="checkout" required>  
+      </div>
+      <br>
+      <div class="grupo1">  
+        <label for="n_quarto">Número de quartos <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="number" id="number" name="n_quarto" min="1" max="5" placeholder=" Quantidade" required>    
+      </div>
+      <div class="grupo2">  
+        <label for="t_quarto">Tipo de quarto <span class="required-field"title="Obrigatório">*</span></label>
+        <select id="selecao" name="t_quarto">
+          <option value="simples">Simples</option>
+          <option value="premium">Premium</option>
+        </select>
+      </div>       
+      <br>
+      <div class="grupo">
+        <label for="camas">Preferência de cama <span class="required-field"title="Obrigatório">*</span></label>
+        <select id="selecao" name="camas">
+          <option value="solteiro">Solteiro</option>
+          <option value="casal">Casal</option>
+          <option value="3solteiro">Três camas de solteiro</option>
+        </select>
+      </div>        
+      <div class="grupo">  
+        <label for="solicitacao">Solicitação</label>
+        <textarea id="solicitacao" name="solicitacao" rows="4" cols="50" placeholder="Do que você precisa? Nos informe sua solicitação com antecedência"></textarea>
+      </div>
+      <div class="grupo">  
+        <label for="incluso">Café da manhã e Almoço</label>
+        <input type="checkbox" id="termos" name="incluso" value="incluso"> Incluso
+      </div>        
+
+      <h3>Dados para Pagamento</h3>
+      <div class="grupo">     
+        <label for="cpf">CPF<span class="required-field"title="Obrigatório">*</span></label>
+        <input type="text" id="entrada" name="cpf" pattern="\d*" maxlength="14" placeholder=" xxx.xxx.xxx-xx" required> 
+      </div>  
+      <div class="grupo">
+        <label for="n_cartao">Número do cartão <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="text" id="entrada" name="n_cartao" pattern="\d{16}" placeholder=" Número do cartão" required>
+      </div>
+      <div class="grupo">
+        <label for="cod_seg">Código de Segurança <span class="required-field"title="Obrigatório">*</span></label>
+        <input type="text" id="entrada" name="cod_seg" pattern="\d{3}" placeholder=" Código de segurança" required>
+      </div>
+      <div class="grupo">    
+        <label for="dat_val">Data de validade<span class="required-field"title="Obrigatório">*</span></label>
+        <input type="date" id="data" name="dat_val" required>    
+      </div>  
+
+      <h3>Termos e Condições</h3>
+      <div class="grupo">
+        <label for="termos">Aceita os Termos e Condições<span class="required-field"title="Obrigatório">*</span></label>
+        <select id="termos" name="termos">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>  
+    </div>
+  </form>  
+<!-- Fim do formulário -->
+    <br>
+
+<!-- Botões do formulário -->
+    <div class="botao">
+      <input type="reset" id="botaoo" value="Limpar">
+      <input type="submit" id="botaoo" value="Enviar">
+    </div>
+
+<!-- Final da página -->
+    <div class="bottom"></div>
+
+</body>
+</html>
