@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecontato.css">
+    <title>Delícia Gelada - Contato</title>
+</head>
+<body>
+    <header class="titulo-pagina">
+        <h1 class="titulo-sorveteria">Delícia Gelada</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reserva.html">Reserva</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="separador"></div>
+
+    <form id="contact-form" action="processar-formulario.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Formulário enviado! Obrigado pelo seu contato.");
+        });
+    </script>
+
+    <div class="separador"></div>
+
+    <footer class="rodape">
+        <p>&copy; 2023 Delícia Gelada. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

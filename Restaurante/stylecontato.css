@@ -1,0 +1,105 @@
+body {
+    background-color: rgba(245, 245, 245, 0.966);
+    color: #57332f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-pagina{
+    background-color: #F2D4D0;
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.titulo-sorveteria {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    color: #70443F;
+    margin: 0; 
+}
+
+.menu {
+    background-color: #F2D4D0;
+    margin: 0; 
+    padding: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #BD726A;
+}
+
+.menu a:hover {
+    color: #70443F;
+}
+.rodape {
+    background-color: #F2D4D0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.rodape p {
+    margin: 0;
+    color: #706260;
+    font-size: 14px;
+}
+
+.separador {
+    width: 100%;
+    height: 2px;
+    background-color: #706260;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+    padding: 55px;
+    border: 1px solid #57332f;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    height: 450px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #57332f;
+}
+
+button {
+    background-color: #57332f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #70443f;
+}
